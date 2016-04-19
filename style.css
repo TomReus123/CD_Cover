@@ -1,0 +1,16 @@
+body{
+	font-family: sans-serif;
+	background-color: mintcream;
+}
+
+.guus{
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	margin: 1em;
+	float: left;
+}
+
+footer{
+	clear: left;
+}
