@@ -3,6 +3,10 @@ body{
 	background-color: mintcream;
 }
 
+.container{
+	width: 1500px;
+}
+
 .guus{
 	width: 400px;
 	height: 400px;
@@ -20,25 +24,47 @@ body{
 	height: 400px;	
 }
 .guus:hover article{
-	animation: eerstTitelZien 1s forwards;
+	animation: eerstTitelZien 1.5s forwards;
 }
 
-@keyframes eerstTitelZien{
-	0%{margin-top: 0}
-	80%{margin-top: -50px}
-	100%{margin-top: -400px}
-	
-	/* stuiteren met onderstaande code */
-	/* 0% {margin-top: 0}
+.andre{
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	margin: 1em;
+	float: left;
+	padding: 0;
+}
+.andre article{
+	position: relative;
+	margin-top: 0;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 11px;
+	padding: 1em;
+	height: 400px;	
+}
+.andre:hover article{
+	animation: stuiteren 1s forwards;
+}
+
+@keyframes stuiteren{
+	0% {margin-top: 0}
 	25%{margin-top: -400px}
 	38%{margin-top: -250px}
 	50%{margin-top: -400px}
 	63%{margin-top: -350px}
 	75%{margin-top: -400px}
 	80%{margin-top: -375px}
-	100%{margin-top: -400px} */
+	100%{margin-top: -400px}
+}
+
+@keyframes eerstTitelZien{
+	0%{margin-top: 0}
+	80%{margin-top: -50px}
+	100%{margin-top: -400px}
 }
 
 footer{
 	clear: left;
+	text-align: center;
 }
